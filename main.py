@@ -1,4 +1,7 @@
-port = "COM3"
-import serial
+from Data import DataCollector
 
-def 
+port = "COM3"
+
+
+
+collector = DataCollector(port)

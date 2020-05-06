@@ -15,9 +15,10 @@ void loop() {
   y = analogRead(4);
   y -= 512.5;
   y /= 512.5;
+  Serial.print("|");
   Serial.print(x);
   Serial.print(", ");
   Serial.print(y);
-  Serial.println();
+  
 
 }

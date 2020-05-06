@@ -4,8 +4,8 @@ import time
 
 port = "COM3"
 
-sensitivity = 1
-delay = 0.01
+sensitivity = 10
+delay = 0.0
 
 
 

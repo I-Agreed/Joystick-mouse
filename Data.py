@@ -6,6 +6,11 @@ class DataCollector:
         self.serial = serial.Serial(self.port, 9600)
     
     def get(self):
-        data = self.serial.read().split("|")[-1]
-        data = eval(data)
+        rawData = self.serial.readline().decode("utf-8", "ignore")
+        try:
+            data = eval(rawData)
+        except ValueError:
+            return None
+        print(data)
+        
         return data

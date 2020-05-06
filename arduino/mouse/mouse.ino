@@ -1,5 +1,6 @@
 float x;
 float y;
+int wait = 15;
 
 void setup() {
   Serial.begin(9600);
@@ -15,10 +16,10 @@ void loop() {
   y = analogRead(4);
   y -= 512.5;
   y /= 512.5;
-  Serial.print("|");
   Serial.print(x);
   Serial.print(", ");
   Serial.print(y);
-  
+  Serial.println("");
+  delay(wait);
 
 }

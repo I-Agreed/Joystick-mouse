@@ -1,6 +1,6 @@
 float x;
 float y;
-int wait = 15;
+int wait = 3;
 
 void setup() {
   Serial.begin(9600);

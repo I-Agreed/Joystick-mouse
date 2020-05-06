@@ -14,5 +14,5 @@ collector = DataCollector(port)
 while 1:
     data = collector.get()
     if data:
-        #mouse.changePos(data[0]*sensitivity, data[1]*sensitivity)
+        mouse.changePos(data[0]*sensitivity, data[1]*sensitivity)
     time.sleep(delay)
